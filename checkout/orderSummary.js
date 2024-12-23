@@ -34,12 +34,12 @@ cartSummaryHTML += `
                     ${matchingProduct.name}
                 </div>
                 <div class="product-price">
-                    ${(matchingProduct.priceCents / 100).toFixed(2)}
+                    ${matchingProduct.getPrice()}
                 </div>
                 <div class="product-quantity">
                     <span>
                     Quantity: <span class="quantity-label">${cartItem.quantity}</span>
-                    </span>
+                    </span> 
                     <span class="update-quantity-link link-primary">
                     Update
                     </span>
